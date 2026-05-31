@@ -1,0 +1,27 @@
+[project]
+name = "okayproject-ai"
+version = "0.1.0"
+description = "AI scripts for OkayProject disaster and safety alerts."
+readme = "../README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "geopandas",
+    "google-genai",
+    "joblib",
+    "numpy",
+    "pandas",
+    "pdfplumber",
+    "pdftotext",
+    "pypdf",
+    "pyarrow",
+    "pyproj",
+    "rasterio",
+    "requests",
+    "scikit-learn==1.7.2",
+    "scipy",
+    "shapely",
+    "xgboost",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,50 @@
+
+한반도90m_GRS80.img
+*.zip
+*.pkl
+ai/models/flood_overlap_v9_xgboost/stage1_xgb_classifier.pkl
+ai/models/flood_overlap_v9_xgboost/stage2_xgb_regressor.pkl
+ai/models/flood_overlap_v9_xgboost/scaler.pkl
+.DS_Store
+__pycache__/
+*.pyc
+config.py
+.env*
+!.env.example
+.venv/
+ai/.venv/
+.uv-cache/
+data/processed/dataset.csv
+data/raw/rainfall/archives/
+data/raw/rainfall/seoul_city_2011_2020/
+data/raw/rainfall/seoul_city_2020_monthly/
+data/raw/rainfall/seoul_city_2021_2024/
+data/raw/rainfall/seoul_city_2025_monthly/
+data/processed/*.csv
+data/processed/*.parquet
+
+# Flood XGBoost experiment artifacts are large and reproducible.
+# The final v10 package is the only tracked model under ai/models.
+ai/models/flood_xgb_v*/
+!ai/models/flood_xgb_v10_stage3_operational/
+!ai/models/flood_xgb_v10_stage3_operational/**
+ai/models/flood_v*/
+ai/reports/flood_v*/
+!ai/reports/flood_v10_stage3_operational/
+!ai/reports/flood_v10_stage3_operational/**
+ai/reports/v*_emergency_verifier*/
+ai/reports/v*_emergency_verifier*_summary.md
+ai/data/score_artifacts/
+ai/_archive_non_v10/
+ai/operational/
+
+# Local v11 policy experiment scratch script.
+ai/scripts/data_quality/evaluate_v11_policy_experiment.py
+
+# Local v10 derivative model experiment scripts.
+ai/scripts/data_quality/train_v10_no_stream_stage3.py
+ai/scripts/data_quality/train_v10_stream_weighted_stage3.py
+
+# Local logs
+*.log
+*.err.log

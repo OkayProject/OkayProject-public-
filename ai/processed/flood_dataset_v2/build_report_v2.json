@@ -1,0 +1,108 @@
+{
+  "created_at": "2026-05-24T11:51:22.727585+09:00",
+  "source_dataset": "data/processed/flood_dataset_v1",
+  "output_dataset": "data/processed/flood_dataset_v2",
+  "projected_crs": "PROJCS[\"Transverse Mercator\",GEOGCS[\"GRS80 ELLIPSOID\",DATUM[\"GRS80 ELLIPSOID\",SPHEROID[\"GRS 1980\",6378137,298.257222101004],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38.0000000000001],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "buffer_distance_m": 50.0,
+  "total_before": 1208900,
+  "positive_before": 9778,
+  "negative_before": 1199122,
+  "positive_ratio_before": 0.008088344776242866,
+  "removed": 8922,
+  "removed_positive": 8668,
+  "removed_negative": 254,
+  "removed_ratio": 0.007380263049052858,
+  "positive_loss_ratio": 0.8864798527306198,
+  "remaining": 1199978,
+  "remaining_positive": 1110,
+  "remaining_negative": 1198868,
+  "remaining_positive_ratio": 0.0009250169586442419,
+  "v2": {
+    "total": 1199978,
+    "positive": 1110,
+    "negative": 1198868,
+    "positive_ratio": 0.0009250169586442419
+  },
+  "sensitivity": [
+    {
+      "total_before": 1208900,
+      "positive_before": 9778,
+      "negative_before": 1199122,
+      "positive_ratio_before": 0.008088344776242866,
+      "removed": 5479,
+      "removed_positive": 5479,
+      "removed_negative": 0,
+      "removed_ratio": 0.004532219372983704,
+      "positive_loss_ratio": 0.5603395377377787,
+      "remaining": 1203421,
+      "remaining_positive": 4299,
+      "remaining_negative": 1199122,
+      "remaining_positive_ratio": 0.0035723159226903967,
+      "buffer_distance_m": 30.0,
+      "warnings": [
+        "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0)."
+      ]
+    },
+    {
+      "total_before": 1208900,
+      "positive_before": 9778,
+      "negative_before": 1199122,
+      "positive_ratio_before": 0.008088344776242866,
+      "removed": 8922,
+      "removed_positive": 8668,
+      "removed_negative": 254,
+      "removed_ratio": 0.007380263049052858,
+      "positive_loss_ratio": 0.8864798527306198,
+      "remaining": 1199978,
+      "remaining_positive": 1110,
+      "remaining_negative": 1198868,
+      "remaining_positive_ratio": 0.0009250169586442419,
+      "buffer_distance_m": 50.0,
+      "warnings": [
+        "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0)."
+      ]
+    },
+    {
+      "total_before": 1208900,
+      "positive_before": 9778,
+      "negative_before": 1199122,
+      "positive_ratio_before": 0.008088344776242866,
+      "removed": 17624,
+      "removed_positive": 9516,
+      "removed_negative": 8108,
+      "removed_ratio": 0.014578542476631649,
+      "positive_loss_ratio": 0.9732051544283085,
+      "remaining": 1191276,
+      "remaining_positive": 262,
+      "remaining_negative": 1191014,
+      "remaining_positive_ratio": 0.00021993224072339239,
+      "buffer_distance_m": 100.0,
+      "warnings": [
+        "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+        "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0)."
+      ]
+    }
+  ],
+  "validation": {
+    "label_rainfall_row_count_match": true,
+    "label_rainfall_key_unmatched": 0,
+    "grid_static_missing_grid_count": 0,
+    "join_possible": true
+  },
+  "warnings": [
+    "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0).",
+    "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0).",
+    "data/raw/flood-traces/seoul/2018/서울시_2018.shp: repaired 1 invalid geometries with buffer(0).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: filtered flood rows by F_YR=2022 (19482/19881 rows).",
+    "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp: repaired 21 invalid geometries with buffer(0)."
+  ]
+}

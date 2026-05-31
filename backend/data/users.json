@@ -1,0 +1,44 @@
+[
+  {
+    "user_id": 1,
+    "name": "지찬",
+    "address": "서울특별시 용산구 청파동",
+    "home_latitude": 37.5446,
+    "home_longitude": 126.9647,
+    "home_address": "서울특별시 용산구 청파동",
+    "frequent_places": ["숙명여대", "숙명여대입구역"],
+    "has_disability": false,
+    "disability_type": null,
+    "is_mobility_vulnerable": false,
+    "is_semi_basement_resident": false,
+    "notification_enabled": true
+  },
+  {
+    "user_id": 2,
+    "name": "민서",
+    "address": "서울특별시 용산구 갈월동",
+    "home_latitude": 37.5441,
+    "home_longitude": 126.9722,
+    "home_address": "서울특별시 용산구 갈월동",
+    "frequent_places": ["숙명여대입구역", "청파동 주민센터"],
+    "has_disability": false,
+    "disability_type": null,
+    "is_mobility_vulnerable": true,
+    "is_semi_basement_resident": false,
+    "notification_enabled": true
+  },
+  {
+    "user_id": 3,
+    "name": "리원",
+    "address": "서울특별시 용산구 청파동",
+    "home_latitude": 37.5460,
+    "home_longitude": 126.9670,
+    "home_address": "서울특별시 용산구 청파동",
+    "frequent_places": ["숙명여대", "남영역"],
+    "has_disability": true,
+    "disability_type": "시각장애",
+    "is_mobility_vulnerable": true,
+    "is_semi_basement_resident": false,
+    "notification_enabled": true
+  }
+]

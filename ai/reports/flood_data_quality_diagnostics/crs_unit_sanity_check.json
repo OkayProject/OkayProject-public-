@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-05-24T23:20:19.416755+09:00",
+  "grid_static_crs": {
+    "stored_in_parquet": false,
+    "inferred_from": "data/raw/dem/seoul_dem.tif",
+    "note": "grid_static has x_coord/y_coord but no embedded CRS metadata; coordinates align with DEM CRS."
+  },
+  "grid_coordinate_bounds": {
+    "x_min": 180691.0,
+    "x_max": 215251.0,
+    "y_min": 537398.0,
+    "y_max": 565568.0,
+    "centroid_lat_min": 37.43577168882506,
+    "centroid_lat_max": 37.68978375871528,
+    "centroid_lon_min": 126.78108071017549,
+    "centroid_lon_max": 127.17291119660149
+  },
+  "dem_crs": "PROJCS[\"Transverse Mercator\",GEOGCS[\"GRS80 ELLIPSOID\",DATUM[\"GRS80 ELLIPSOID\",SPHEROID[\"GRS 1980\",6378137,298.257222101004],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38.0000000000001],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "dem_bounds": [
+    180646.0,
+    537263.0,
+    215296.0,
+    565703.0
+  ],
+  "dem_resolution": [
+    90.0,
+    90.0
+  ],
+  "stream_layer_crs": "EPSG:5186",
+  "stream_layer_path": "data/raw/hydrography/rivers/seoul/seoul_rivers.gpkg",
+  "flood_trace_crs_by_event": [
+    {
+      "event_id": "EVT_2014_FLOOD",
+      "event_year": 2014,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2014/서울시_2014.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2016_FLOOD",
+      "event_year": 2016,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2016/서울시_2016.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2017_FLOOD",
+      "event_year": 2017,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2017/서울시_2017.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2018_FLOOD",
+      "event_year": 2018,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2018/서울시_2018.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2019_FLOOD",
+      "event_year": 2019,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2019/서울시_2019.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2020_FLOOD",
+      "event_year": 2020,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2020/서울시_2020.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2022_FLOOD",
+      "event_year": 2022,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2022/2022 서울시 침수흔적도.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2023_FLOOD",
+      "event_year": 2023,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2023/2023 침수흔적도 최신수정.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2024_FLOOD",
+      "event_year": 2024,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2024/2024 침수흔적도.shp",
+      "exists": true,
+      "crs": "EPSG:5179"
+    },
+    {
+      "event_id": "EVT_2025_FLOOD",
+      "event_year": 2025,
+      "flood_trace_file": "data/raw/flood-traces/seoul/2025/2025 침수흔적도.shp",
+      "exists": true,
+      "crs": "PROJCS[\"KGD2002 / Central Belt 2010\",GEOGCS[\"GCS_KGD2002\",DATUM[\"D_Geocentric_datum_of_Korea\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"m\",1],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]"
+    }
+  ],
+  "overlap_calculation_crs": {
+    "source": "ai/scripts/data_pipeline/build_processed_flood_dataset_v1.py",
+    "code_behavior": "uses DEM raster CRS when available, otherwise DEFAULT_PROJECTED_CRS EPSG:5179",
+    "current_inferred_crs": "PROJCS[\"Transverse Mercator\",GEOGCS[\"GRS80 ELLIPSOID\",DATUM[\"GRS80 ELLIPSOID\",SPHEROID[\"GRS 1980\",6378137,298.257222101004],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38.0000000000001],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]"
+  },
+  "distance_calculation_crs": {
+    "distance_to_flood_trace_m": "processed labels were generated in build_processed_flood_dataset_v1 projected CRS",
+    "distance_to_stream": "streamfix uses DEM CRS and transforms river layer to DEM CRS before distance calculation",
+    "streamfix_report": "data/processed/flood_dataset_v1/stream_distance_fix_report.json"
+  },
+  "streamfix_report_summary": {
+    "created_at": "2026-05-24T22:36:07.044462+09:00",
+    "grid_static_path": "data/processed/flood_dataset_v1/grid_static.parquet",
+    "distance_cache_path": "data/processed/flood_dataset_v1/grid_distance_to_stream.parquet",
+    "dem_path": "data/raw/dem/seoul_dem.tif",
+    "river_path": "data/raw/hydrography/rivers/seoul/seoul_rivers.gpkg",
+    "dem_crs": "PROJCS[\"Transverse Mercator\",GEOGCS[\"GRS80 ELLIPSOID\",DATUM[\"GRS80 ELLIPSOID\",SPHEROID[\"GRS 1980\",6378137,298.257222101004],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38.0000000000001],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "river_original_crs": "EPSG:5186",
+    "grid_count": 120890,
+    "distance_to_stream_stats_m": {
+      "count": 120890.0,
+      "mean": 509.19655149121024,
+      "std": 460.83283817903725,
+      "min": 0.0,
+      "1%": 0.0,
+      "5%": 2.806288162504811,
+      "10%": 40.85572075313407,
+      "25%": 160.4864181005857,
+      "50%": 393.2348825051281,
+      "75%": 730.5310195534673,
+      "90%": 1128.4988951890198,
+      "95%": 1405.088076034591,
+      "99%": 2118.6345471576433,
+      "max": 3188.6219423539483
+    },
+    "sanity_warning": false
+  }
+}

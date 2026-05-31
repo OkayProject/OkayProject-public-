@@ -1,0 +1,56 @@
+{
+  "model_version": "flood_xgb_v10_stage3_operational",
+  "base_experiment": "flood_xgb_v9_stage3_danger_filter_weighted_refine",
+  "selected_config": "xgboost_medium_overlap_area_weighted_alpha2_max_precision_with_recall_guard",
+  "selected_mode": "best",
+  "stage3_model_key": "xgboost_medium_overlap_area_weighted_alpha2",
+  "threshold_strategy": "max_precision_with_recall_guard",
+  "personalization_policy": {
+    "included": false
+  },
+  "suspect_event_policy": {
+    "EVT_2025_FLOOD": "excluded from train/threshold selection; evaluated only as suspect holdout"
+  },
+  "metrics": {
+    "model_version": "flood_xgb_v10_stage3_operational",
+    "base_experiment": "flood_xgb_v9_stage3_danger_filter_weighted_refine",
+    "selected_config": "xgboost_medium_overlap_area_weighted_alpha2_max_precision_with_recall_guard",
+    "caution_or_above_recall": 0.9500291205591147,
+    "danger_or_above_recall": 0.7815958066394875,
+    "danger_or_above_precision": 0.018956515843240068,
+    "danger_or_above_alert_rate": 0.325335245080468,
+    "major_event_min_danger_recall": 0.6264044943820225,
+    "major_event_zero_danger_recall_count": 0,
+    "emergency_recall": 0.3001747233546884,
+    "emergency_precision": 0.20599520383693046,
+    "emergency_alert_rate": 0.011498056084043345,
+    "emergency_FP": 9933,
+    "large_overlap_positive_danger_recall": {
+      "top20_area": 0.7880023296447292,
+      "top30_area": 0.827639751552795,
+      "top20_ratio": 0.7880023296447292,
+      "top30_ratio": 0.827639751552795
+    },
+    "suspect_evt2025_holdout": {
+      "caution_or_above_recall": 0.5532271584241408,
+      "caution_or_above_precision": 0.009686082860036103,
+      "caution_or_above_alert_rate": 0.5636446356191579,
+      "danger_candidate_recall": 0.22129086336965634,
+      "danger_candidate_alert_rate": 0.13996194887914634,
+      "danger_or_above_recall": 0.22129086336965634,
+      "danger_or_above_precision": 0.015602836879432624,
+      "danger_or_above_alert_rate": 0.13996194887914634,
+      "danger_TP": 264,
+      "danger_FP": 16656,
+      "danger_FN": 929,
+      "emergency_recall": 0.0,
+      "emergency_precision": 0.0,
+      "emergency_alert_rate": 0.0,
+      "emergency_TP": 0,
+      "emergency_FP": 0,
+      "emergency_FN": 1193,
+      "event_id": "EVT_2025_FLOOD"
+    },
+    "personalization_included": false
+  }
+}

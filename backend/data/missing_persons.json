@@ -1,0 +1,29 @@
+[
+  {
+    "id": "safe182_fallback_kim_eunji_20021112",
+    "name": "김은지",
+    "age": 27,
+    "missing_age": 3,
+    "current_age": 27,
+    "gender": "여자",
+    "nationality": "내국인",
+    "missing_person_category": "아동",
+    "occurred_date": "2002-11-12",
+    "last_seen_location": "서울 동작구 신대방1동",
+    "last_seen_latitude": 37.4889,
+    "last_seen_longitude": 126.9093,
+    "height_cm": 120,
+    "weight_kg": 15,
+    "body_features": "체격 기타, 얼굴형 둥근형, 두발색상 기타, 두발형태 기타",
+    "hair_color": "기타",
+    "hair_shape": "기타",
+    "face_shape": "둥근형",
+    "appearance_description": "착의의상 기타",
+    "description": "2002년 11월 12일 서울 동작구 신대방1동에서 실종된 아동입니다. 당시 나이 3세, 현재 나이 27세로 공개되어 있습니다.",
+    "report_summary": "김은지 실종자는 2002년 11월 12일 서울 동작구 신대방1동에서 마지막으로 확인되었습니다. 당시 나이 3세, 현재 나이 27세의 여성 아동 실종 사례입니다.",
+    "image_url": "data/missing_persons/kim_eunji_safe182.png",
+    "progress_status": "하달",
+    "source": "safe182_public_missing_child_search",
+    "source_note": "안전Dream/Safe182 실종아동등 검색 공개 화면 기준 fallback 데이터"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "user_id": 1,
+    "risk_level": "주의",
+    "risk_score": 35,
+    "risk_reason": "현재 위치 주변에 강한 비가 이어지고 있어 침수 가능성에 대비가 필요합니다.",
+    "rainfall_level": "발바닥",
+    "location_name": "숙명여대 인근",
+    "updated_at": "14시 20분",
+    "latitude": 37.5446,
+    "longitude": 126.9647
+  },
+  {
+    "user_id": 2,
+    "risk_level": "위험",
+    "risk_score": 68,
+    "risk_reason": "강한 비가 계속되면서 주변 도로와 저지대에 물이 빠르게 고일 수 있습니다.",
+    "rainfall_level": "발목",
+    "location_name": "숙명여대 인근",
+    "updated_at": "14시 25분",
+    "latitude": 37.5446,
+    "longitude": 126.9647
+  },
+  {
+    "user_id": 3,
+    "risk_level": "긴급",
+    "risk_score": 91,
+    "risk_reason": "폭우가 집중되고 있어 도로와 지하 공간 침수가 빠르게 진행될 수 있습니다. 즉시 대피가 필요합니다.",
+    "rainfall_level": "종아리",
+    "location_name": "숙명여대 인근",
+    "updated_at": "14시 30분",
+    "latitude": 37.5446,
+    "longitude": 126.9647
+  }
+]

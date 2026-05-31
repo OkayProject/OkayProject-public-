@@ -1,0 +1,16 @@
+geopandas
+google-genai
+joblib
+numpy
+pandas
+pdfplumber
+pdftotext
+pypdf
+pyarrow
+pyproj
+rasterio
+requests
+scikit-learn==1.7.2
+scipy
+shapely
+xgboost

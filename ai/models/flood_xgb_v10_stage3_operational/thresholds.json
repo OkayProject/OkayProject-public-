@@ -1,0 +1,21 @@
+{
+  "model_version": "flood_xgb_v10_stage3_operational",
+  "caution": 0.055,
+  "danger_candidate": 0.065,
+  "emergency": 0.2207685261964798,
+  "stage1_candidate": 0.3747505247592926,
+  "stage3_danger_filter": 0.012427846901118755,
+  "stage3_threshold_strategy": "max_precision_with_recall_guard",
+  "metadata": {
+    "caution_threshold_source": "runtime_stage2_false_positive_guard",
+    "caution_threshold_adjusted_from": 0.0016556746559217572,
+    "caution_threshold_adjusted_to": 0.055,
+    "danger_candidate_adjusted_from": 0.028214912861585617,
+    "danger_candidate_adjusted_to": 0.065,
+    "adjustment_reason": "Raised Stage2 caution/danger gates to reduce broad caution false positives while preserving stage ordering.",
+    "base_experiment": "flood_xgb_v9_stage3_danger_filter_weighted_refine",
+    "selected_config": "xgboost_medium_overlap_area_weighted_alpha2_max_precision_with_recall_guard",
+    "emergency_rescue": "no_rescue",
+    "personalization_included": false
+  }
+}

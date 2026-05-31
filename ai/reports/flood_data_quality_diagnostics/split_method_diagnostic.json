@@ -1,0 +1,24 @@
+{
+  "summary": "v6 and v7 train/evaluate with one event_id held out at a time (manual Leave-One-Event-Out).",
+  "split_family": "LeaveOneGroupOut-style by event_id",
+  "not_random_row_level": true,
+  "leakage_note": "No random row-level split was found in v6/v7 scripts checked here. Event-level holdout is appropriate for event generalization diagnostics.",
+  "files": {
+    "ai/scripts/model_xgb/train_stage12_passcap_sweep_v6.py": {
+      "exists": true,
+      "imports_random_kfold": false,
+      "imports_group_kfold": false,
+      "uses_event_holdout_loop": true,
+      "diagnosed_method": "LOEO by event_id",
+      "event_generalization_ok": true
+    },
+    "ai/scripts/model_v7/train_v7_candidate_rescue_experiments.py": {
+      "exists": true,
+      "imports_random_kfold": false,
+      "imports_group_kfold": false,
+      "uses_event_holdout_loop": true,
+      "diagnosed_method": "LOEO by event_id",
+      "event_generalization_ok": true
+    }
+  }
+}

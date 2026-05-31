@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-05-24T22:36:07.044462+09:00",
+  "grid_static_path": "data/processed/flood_dataset_v1/grid_static.parquet",
+  "distance_cache_path": "data/processed/flood_dataset_v1/grid_distance_to_stream.parquet",
+  "dem_path": "data/raw/dem/seoul_dem.tif",
+  "river_path": "data/raw/hydrography/rivers/seoul/seoul_rivers.gpkg",
+  "dem_crs": "PROJCS[\"Transverse Mercator\",GEOGCS[\"GRS80 ELLIPSOID\",DATUM[\"GRS80 ELLIPSOID\",SPHEROID[\"GRS 1980\",6378137,298.257222101004],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",38.0000000000001],PARAMETER[\"central_meridian\",127],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",200000],PARAMETER[\"false_northing\",600000],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "river_original_crs": "EPSG:5186",
+  "grid_count": 120890,
+  "distance_to_stream_stats_m": {
+    "count": 120890.0,
+    "mean": 509.19655149121024,
+    "std": 460.83283817903725,
+    "min": 0.0,
+    "1%": 0.0,
+    "5%": 2.806288162504811,
+    "10%": 40.85572075313407,
+    "25%": 160.4864181005857,
+    "50%": 393.2348825051281,
+    "75%": 730.5310195534673,
+    "90%": 1128.4988951890198,
+    "95%": 1405.088076034591,
+    "99%": 2118.6345471576433,
+    "max": 3188.6219423539483
+  },
+  "sanity_warning": false
+}

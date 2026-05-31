@@ -1,0 +1,158 @@
+{
+  "model_version": "flood_xgb_v10_stage3_operational",
+  "data_version": null,
+  "stage1_candidate": 0.3747505247592926,
+  "stage1_features": [
+    "elevation",
+    "slope",
+    "mean_elevation",
+    "relative_low",
+    "relative_high",
+    "relative_elev",
+    "aspect",
+    "curvature",
+    "distance_to_stream"
+  ],
+  "trusted_event_ids": [
+    "EVT_2014_FLOOD",
+    "EVT_2016_FLOOD",
+    "EVT_2017_FLOOD",
+    "EVT_2018_FLOOD",
+    "EVT_2019_FLOOD",
+    "EVT_2020_FLOOD",
+    "EVT_2022_FLOOD",
+    "EVT_2023_FLOOD",
+    "EVT_2024_FLOOD"
+  ],
+  "suspect_event_id": "EVT_2025_FLOOD",
+  "fold_event_mapping": [
+    {
+      "fold": 0,
+      "event_id": "EVT_2014_FLOOD",
+      "event_year": 2014,
+      "holdout_rows": 120890,
+      "holdout_positive": 27
+    },
+    {
+      "fold": 1,
+      "event_id": "EVT_2016_FLOOD",
+      "event_year": 2016,
+      "holdout_rows": 120890,
+      "holdout_positive": 41
+    },
+    {
+      "fold": 2,
+      "event_id": "EVT_2017_FLOOD",
+      "event_year": 2017,
+      "holdout_rows": 120890,
+      "holdout_positive": 13
+    },
+    {
+      "fold": 3,
+      "event_id": "EVT_2018_FLOOD",
+      "event_year": 2018,
+      "holdout_rows": 120890,
+      "holdout_positive": 712
+    },
+    {
+      "fold": 4,
+      "event_id": "EVT_2019_FLOOD",
+      "event_year": 2019,
+      "holdout_rows": 120890,
+      "holdout_positive": 13
+    },
+    {
+      "fold": 5,
+      "event_id": "EVT_2020_FLOOD",
+      "event_year": 2020,
+      "holdout_rows": 120890,
+      "holdout_positive": 211
+    },
+    {
+      "fold": 6,
+      "event_id": "EVT_2022_FLOOD",
+      "event_year": 2022,
+      "holdout_rows": 120890,
+      "holdout_positive": 7153
+    },
+    {
+      "fold": 7,
+      "event_id": "EVT_2023_FLOOD",
+      "event_year": 2023,
+      "holdout_rows": 120890,
+      "holdout_positive": 229
+    },
+    {
+      "fold": 8,
+      "event_id": "EVT_2024_FLOOD",
+      "event_year": 2024,
+      "holdout_rows": 120890,
+      "holdout_positive": 186
+    }
+  ],
+  "metric_definitions": {
+    "stage1_oof_metrics": "Fold-holdout metrics recreated from saved stage1_fold_N models and sorted trusted events. The original stage12_v4_oof_predictions.parquet is not packaged.",
+    "stage1_final_ensemble_apparent_metrics": "Saved 9-fold Stage1 ensemble applied back to trusted rows; not a validation metric.",
+    "stage1_suspect_evt2025_final_ensemble_metrics": "Saved 9-fold Stage1 ensemble on suspect EVT_2025 holdout."
+  },
+  "stage1_oof_metrics": {
+    "threshold": 0.3747505247592926,
+    "row_count": 1088010,
+    "positive_count": 8585,
+    "negative_count": 1079425,
+    "predicted_positive_count": 628783,
+    "pass_rate": 0.5779202397036792,
+    "tp": 7145,
+    "fp": 621638,
+    "fn": 1440,
+    "tn": 457787,
+    "recall": 0.8322655794991264,
+    "precision": 0.011363220697760594,
+    "f1": 0.022420328601373146,
+    "pr_auc": 0.013308808755730648,
+    "roc_auc": 0.6817997139782015,
+    "score_mean": 0.3984535336494446,
+    "score_median": 0.41420578956604004,
+    "score_p95": 0.694211483001709
+  },
+  "stage1_final_ensemble_apparent_metrics": {
+    "threshold": 0.3747505247592926,
+    "row_count": 1088010,
+    "positive_count": 8585,
+    "negative_count": 1079425,
+    "predicted_positive_count": 613251,
+    "pass_rate": 0.5636446356191579,
+    "tp": 8154,
+    "fp": 605097,
+    "fn": 431,
+    "tn": 474328,
+    "recall": 0.9497961560861968,
+    "precision": 0.013296350107867741,
+    "f1": 0.02622556429669559,
+    "pr_auc": 0.03032755152756631,
+    "roc_auc": 0.8039106321692524,
+    "score_mean": 0.3984534740447998,
+    "score_median": 0.40621626377105713,
+    "score_p95": 0.690367579460144
+  },
+  "stage1_suspect_evt2025_final_ensemble_metrics": {
+    "threshold": 0.3747505247592926,
+    "row_count": 120890,
+    "positive_count": 1193,
+    "negative_count": 119697,
+    "predicted_positive_count": 68139,
+    "pass_rate": 0.5636446356191579,
+    "tp": 660,
+    "fp": 67479,
+    "fn": 533,
+    "tn": 52218,
+    "recall": 0.5532271584241408,
+    "precision": 0.009686082860036103,
+    "f1": 0.01903882766976288,
+    "pr_auc": 0.012921859445373801,
+    "roc_auc": 0.5144503457427266,
+    "score_mean": 0.3984535336494446,
+    "score_median": 0.40621626377105713,
+    "score_p95": 0.6903535723686218
+  }
+}

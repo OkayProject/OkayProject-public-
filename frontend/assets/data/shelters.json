@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "숙명여대 제1대피소",
+    "address": "서울특별시 용산구 청파로",
+    "latitude": 37.5449,
+    "longitude": 126.9648,
+    "is_open": true
+  },
+  {
+    "id": 2,
+    "name": "청파동 주민센터 대피소",
+    "address": "서울특별시 용산구 청파동",
+    "latitude": 37.5460,
+    "longitude": 126.9670,
+    "is_open": true
+  },
+  {
+    "id": 3,
+    "name": "숙명여대입구역 인근 대피소",
+    "address": "서울특별시 용산구 갈월동",
+    "latitude": 37.5441,
+    "longitude": 126.9722,
+    "is_open": true
+  }
+]
